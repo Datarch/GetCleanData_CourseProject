@@ -2,6 +2,15 @@
 
 The 'run_analysis.R' script using the below data set to create a tidy data after merging the training and test data sets.
 
+The final format of the data frame, having the following columns:
+
+* Subject
+* Activity
+* Variable
+* Value
+
+The 'variable' column lists only features which represents measurements on the mean and standard deviation. The 'Value' column lists all the average of each variable for each activity and each subject.
+
 ===================================================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
