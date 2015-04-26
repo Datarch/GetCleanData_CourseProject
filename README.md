@@ -5,7 +5,7 @@
 This repo contains 3 files, as result of the project work: 
 
 * 'run_analysis.R' script, which collects, works with, cleans a data set and prepare tidy data that can be used for later analysis.
-* 'CookBook.md' file, which describes the variables and their transformation used in the run_analysis.R script.
+* 'CodeBook.md' file, which describes the variables and their transformation used in the run_analysis.R script.
 * 'README.md' file, Which describes how the R script is working.
 
 This project assignment goals was to createt an R script, which gets the Human Activity Recognition Using Smartphones Data Set, creates a tidy dataset and cleans it in order to be used for further analysis.
