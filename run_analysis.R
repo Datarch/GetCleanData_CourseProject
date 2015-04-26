@@ -63,5 +63,5 @@ run_analysis <- function() {
         
         ## Create a txt file to store the tidy data set
         
-        write.table(tidyData, file = "./data/Train_Test_Mean_Data.txt", row.name = FALSE)        
+        write.table(tidyData, file = "Train_Test_Mean_Data.txt", row.name = FALSE)        
 }

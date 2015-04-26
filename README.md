@@ -1,6 +1,8 @@
 # GetCleanData_CourseProject
 
-This repo contains 3 files, as result of the Getting and Cleaning Data Course Project: 
+## Getting and Cleaning Data Course Project
+
+This repo contains 3 files, as result of the project work: 
 
 * 'run_analysis.R' script, which collects, works with, cleans a data set and prepare tidy data that can be used for later analysis.
 * 'CookBook.md' file, which describes the variables and their transformation used in the run_analysis.R script.
@@ -11,9 +13,11 @@ This project assignment goals was to createt an R script, which gets the Human A
 ## Data Source for the project
 
 The source date can be obtained from here:
+
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 These data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The source data should be first downloaded and unzipped to the working directory, in order to start 'run_analysis.R' script.
@@ -39,12 +43,21 @@ Finally binding the training data set with test data set into 'mergedData' data 
 
 * Labels the variable names and extracts only the measurements on the mean and standard deviation for each measurement:
 
-## 
+The first column name is 'Subject', the secomd column name is 'Activity', the remaining column names are named from the 'features' data frame 2nd column, as the values are represented by those names.
+
+Used 'grep' function to subset the data frame to only contains columns which represents measurements on the mean and standard deviation. The selected number of the column names are stored within 'featuresSubset' vector.
 
 * Uses descriptive activity names to name the activities in the data set:
 
-##
+The second column activity ID were replaced by the respective activity name from the 'actLabels' data frame.
 
-* Creates a tidy data set with the average of each variable for each activity and each subject:
+* Creates independent tidy data set with the average of each variable for each activity and each subject:
 
-##
+The subsetted data frame were melted for each features as measure variables using 'melt' function. With 'dcast' function the average value for each variable were counted, then 'melt' function was used to create the final format of the data frame, having the following columns:
+
+* Subject
+* Activity
+* Variable
+* Value
+
+The last step is to write the data frame into 'Train_Test_Mean_Data.txt' file.
