@@ -6,7 +6,9 @@
 * the 'CookBook.md' file, which describes the variables and their transformation used in the run_analysis.R script.
 * the 'README.md' file, Which describes how the R script is working.
 
-## This project assignment goals was to createt an R script, which gets the Human Activity Recognition Using Smartphones Data Set, creates a tidy dataset and cleans it in order to be used for further analysis.
+### This project assignment goals was to createt an R script, which gets the Human Activity Recognition Using Smartphones Data Set, creates a tidy dataset and cleans it in order to be used for further analysis.
+
+text
 
 # Data Source for the project
 
